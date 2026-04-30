@@ -1,0 +1,49 @@
+Pseudocode for Exam System 
+
+START
+Create Account
+INPUT name, email, password, phone_number
+SEND verification_code
+REPEAT
+    INPUT verification_code
+    IF verification_code is correct THEN
+        Activate Account
+    ELSE
+        Display "Invalid verification code"
+    ENDIF
+UNTIL verification_code is correct
+REPEAT
+    INPUT username, password
+    IF login information is correct THEN
+        Go to Dashboard
+    ELSE
+        Display "Login failed"
+        Ask user if they want to recover password
+        IF user chooses recovery THEN
+            Recover Password
+        ENDIF
+    ENDIF
+UNTIL login information is correct
+Browse Exams
+Select Exam
+Go to Payment Page
+Confirm Payment
+Send confirmation message by Email or SMS
+Take Exam
+Show Result
+IF result is Pass THEN
+    Issue Certificate
+    END
+ELSE
+    IF attempt_number = 1 THEN
+        Pay 50% of exam fee
+    ELSE IF attempt_number = 2 THEN
+        Pay 25% of exam fee
+    ELSE IF attempt_number >= 3 THEN
+        Pay 100% of exam fee
+    ENDIF
+    Confirm Payment
+    Book New Exam Appointment
+    Take Exam Again
+ENDIF
+END
