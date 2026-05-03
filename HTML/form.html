@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {background-color: beige;
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 800%;
+    }
+    legend{
+        font-weight: bold;
+    }
+    input, select, textarea, button {
+        width: 50%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    </style>
+</head>
+<body>
+    <h1> HTML FORM ELEMENTS </h1>
+    <form>
+        <fieldset> 
+       <label for="fullname"> Full Name </label> </br>
+       <input type="tex" name ="Full Name" id = "full-name"> </form></br>
+       <label for="email"> Email: </label> </br>
+        <input type="email" name="email" id="email"> </br></br>
+        <label for="Password"> Password: </label> </br>
+        <input type="password" name="password" id="password"> </br></br>
+       
+        <button type ="submit"> Submit </button></br></br>
+        </fieldset>
+
+        <fieldset>
+        <label for="country"> Country: </label></br>
+        <select name="country" id="country">
+            <optgroup label="Gulf Countries"> 
+            <option value="Saudi Arabia"> Saudi Arabia </option>
+            <option value="Qatar"> Qatar</option>
+            </outgroup>
+        </select> </br></br>
+        </fieldset>
+
+        <fieldset>
+        <label for="supported-browser"> Supported-Browser </label></br>
+        <input list="browsers" id="browsers" name="browsers">
+        <datalist id="browsers"> 
+            <option value="Chrome"> 
+            <option value="Firefox">
+            <option value="Safari">
+            <option value="Brave">
+        </datalist> </br></br>
+        </fieldset>
+
+        <fieldset>
+
+<label for=" description"> Description: </label></br>
+        <textarea name="description"> Write here .. </textarea> </br>
+<label for=" num1"> Number 1: </label></br>
+        <input type="number" name="num1" id="num1" value="0" max="5" min="2">  </br></br>
+<label for="result"> Results </label></br>
+<output name="result" > 30 </output>
+</fieldset>
+<fieldset>
+        <button type="submit"> Submit </button>
+        </fieldset>
+    </form>
+</body>
+</html>
