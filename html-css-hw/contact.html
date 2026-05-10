@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Content (FORM):
+
+- Name (text)
+- Email (email)
+- Password
+- Gender (radio)
+- Skills (checkbox)
+- Country (select dropdown)
+- datalist (City)
+- Message (textarea)
+- Submit button
+- Reset button
+
+Use:
+form, input, textarea, select, option, button, datalist-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT PAGE</title>
+    <nav class="navbar">
+    <a href="file:///C:/Tuwaiq/Noof_Abdullah_Alarifi/html-css-hw/index.html"> Index Page</a>
+<a href="file:///C:/Tuwaiq/Noof_Abdullah_Alarifi/html-css-hw/about.html">  About Me </a>
+    <a href="file:///C:/Tuwaiq/Noof_Abdullah_Alarifi/html-css-hw/contact.html"> Contact Page</a>
+    <a href="file:///C:/Tuwaiq/Noof_Abdullah_Alarifi/html-css-hw/table.html"> Table Page</a>
+   </nav> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Contact Form </h1>
+    <form>
+        <fieldset> 
+       <label for="fullname"> Name: </label> </br>
+       <input type="text" name ="Full Name" id = "full-name"> </form></br>
+       <label for="email"> Email: </label> </br>
+        <input type="email" name="email" id="email"> </br>
+        <label for="Password"> Password: </label> </br>
+        <input type="password" name="password" id="password"> </br></br>
+        </fieldset>
+
+        <br/> <fieldset>
+        <label for="Gender"> Gender: </label> </br>
+        <input type="radio" name="gender" id="gender"> Male </br>
+        <input type="radio" name="gender" id="gender"> Female </br></br>
+        <label for="skills"> Skills: </label> </br>
+        <input type="checkbox" name="skills" id="skills"> Programming </br>
+        <input type="checkbox" name="skills" id="skills"> Writng Reports </br>
+        <input type="checkbox" name="skills" id="skills"> Critical Thinking </br>
+        <input type="checkbox" name="skills" id="skills"> Data Analysis </br><br/>
+        <label for="country"> Country: </label></br>
+        <select name="country" id="country">
+            <optgroup label="Gulf Countries"> 
+            <option value="Saudi Arabia"> Saudi Arabia </option>
+            <option value="Qatar"> UAE</option>
+            <option value="Qatar"> Oman</option>
+            <option value="Qatar"> Qatar</option>
+            <option value="Qatar"> Bahrain</option>
+            <option value="Qatar"> Kuwait</option>
+            </outgroup>
+        </select> </br></br>
+        <label for="city"> City </label></br>
+        <input list="city" id="city" name="city">
+        <datalist id="city"> 
+            <option value="Riyadh"> 
+            <option value="Jeddah">
+            <option value="Khobar">
+            <option value="Madinah">
+        </datalist> </br></br>
+        </fieldset>
+
+        <fieldset>
+<label for=" description"> Message: </label></br>
+        <textarea name="description"> Write here .. </textarea> </br>
+</fieldset>
+<br/>
+
+<fieldset>
+       <button type="reset"> Reset </button></br> 
+        </fieldset>
+
+<fieldset>
+     <button type ="submit"> Submit </button></br>
+ </fieldset>
+
+    </form>
+
+    <br/>
+</body>
+</html>
