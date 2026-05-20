@@ -16,3 +16,20 @@
 
 # Use logical operators for the age range, and nested if statements
 # for the job check and income tiers.
+
+
+age = int(input("Enter Your Age: "))
+income = int(input("Enter Your Income: "))
+job_status = input("Do You Have a Job (yes/no)? ")
+if 21 <= age <= 65:
+    if job_status == "yes":
+        if income >= 5000:
+            print ("Approved")
+        elif 3000 <= income < 5000:
+            print ("Approved with conditions")
+        else:
+             print ("Rejected: low income")
+    else:
+        print ("Rejected: no job")         
+else:
+    print ("Rejected: age not eligible")

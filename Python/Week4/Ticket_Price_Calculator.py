@@ -9,3 +9,22 @@
 # (minimum price must not go below 10 SAR).
 # Ask the user for age and day, then print the final ticket price.
 # Constraint: NO logical operators. Use nested conditions.
+
+# Solution:
+
+age = int(input("Enter your age: "))
+day = input("Enter the day: ")
+if age < 12:
+    price = 20
+elif age < 18:
+    price = 35
+elif age < 60:
+    price = 50
+else:
+    price = 25
+if day == "Tuesday":
+    price = price - 10
+    if price < 10:
+        price = price + 10
+        print ("No Discount Applied! Minimum price must not go below 10 SAR!")
+print("Final ticket price:", price, "SAR")

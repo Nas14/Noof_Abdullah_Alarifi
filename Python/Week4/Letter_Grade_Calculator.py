@@ -8,3 +8,20 @@
 #   - below 60   -> F
 # Constraint: Do NOT use 'and'. Use the natural order of elif to
 # handle the ranges.
+
+#Solution:
+
+score = int(input("Insert Your Score From (0-100): "))
+if score > 100:
+    print ("The Score Range is Between (0-100)")
+else:
+    if score >= 90:
+        print ("A")
+    elif score >= 80:
+        print ("B")
+    elif score >= 70:
+        print ("C")
+    elif score >= 60:
+        print ("D")
+    else:
+        print ("F")
