@@ -26,5 +26,5 @@ if day == "Tuesday":
     price = price - 10
     if price < 10:
         price = price + 10
-        print ("No Discount Applied! Minimum price must not go below 10 SAR!")
+    print ("No Discount Applied! Minimum price must not go below 10 SAR!")
 print("Final ticket price:", price, "SAR")
