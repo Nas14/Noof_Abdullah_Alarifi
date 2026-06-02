@@ -11,7 +11,7 @@
 # Show a main menu with these options:
 #     1 - Show Balance
 #     2 - Deposit
-#     3 - Withdraw
+#     3 - Withdraw 
 #     0 - Exit
 
 # Rules:
@@ -34,6 +34,7 @@
 # 0 at each step.
 
 # Solution: 
+
 menu = """ 
 1 - Show Balance
 2 - Deposit
@@ -41,9 +42,44 @@ menu = """
 0 - Exit
 """
 balance = 1000
-num = int (input("Enter your choice: "))
-
-for i in menu:
-    if num == "1":
-       print ("balance")
-print (menu)
+while True:
+    print (menu)
+    num = input("Enter your choice: ") 
+    if not num.isdigit():
+        print ("Please enter numbers only!")
+        continue
+    num = int(num)      
+    if num == 1:
+       print (f"The balance is: {balance} SAR")
+    elif num ==  2:
+        while True:
+            deposit = int(input ("Enter an amout (50 - 100 - 200 - 500) or (0) to cancel: "))
+            if deposit == 0:
+                break
+            elif deposit in [50,100,200,500]:
+                balance += deposit
+                print (f"Deposite Successfule!")
+                print (f"The new balance is: {balance}SAR")
+                
+            else:
+                print ("Invalid amount, Try again!")
+    elif num == 3:
+        while True:
+            whithdrawl = int(input ("Enter an amout to withdrawl (50 - 100 - 200 - 500) or (0) to cancel: "))
+            if whithdrawl == 0:
+                break
+            elif whithdrawl in [50,100,200,500]:
+                if balance >= whithdrawl:
+                    balance -= whithdrawl
+                    print (f"Whithdrawl Successfule!")
+                    print (f"The new balance is: {balance}SAR")
+                else:
+                    print ("Insufficient funds!")
+                
+            else:
+                print ("Invalid amount, Try again!")
+    elif num == 0:
+        print ("Thank You!")
+        break
+    else:
+        print ("Invalid Option Number! Try again!")
