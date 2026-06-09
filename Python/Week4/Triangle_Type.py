@@ -21,5 +21,3 @@ elif triangle1 == triangle3 != triangle2:
     print ("The Triangle is Isosceles")
 else:
     print ("The Triangle is Scalene")
-
-
